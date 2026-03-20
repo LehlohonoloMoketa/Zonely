@@ -1,0 +1,30 @@
+.clock {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    background: linear-gradient(45deg, #1c1c1c, #2c2c2c);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .clock {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+}
